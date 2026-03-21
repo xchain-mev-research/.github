@@ -8,7 +8,7 @@ The focus is on data and tooling that go beyond what traditional subgraphs provi
 
 ## Projects
 
-### [xchain-dex-indexer](./xchain-dex-indexer)
+### [xchain-dex-indexer](https://github.com/xchain-mev-research/xchain-dex-indexer)
 
 A TypeScript framework for indexing DEX liquidity pools with sub-block granularity. Built on [Subsquid SDK](https://docs.subsquid.io/), it reconstructs the exact state evolution of pools within each block and exposes it via a unified GraphQL API.
 
