@@ -28,6 +28,8 @@ A TypeScript framework for indexing DEX liquidity pools with sub-block granulari
 
 Open an issue before large changes. Keep PRs focused. Documentation in English.
 
+[alessiogiannini.dev](https://alessiogiannini.dev)
+
 ---
 
 ## License
