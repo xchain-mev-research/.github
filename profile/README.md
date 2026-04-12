@@ -22,6 +22,19 @@ A TypeScript framework for indexing DEX liquidity pools with sub-block granulari
 
 **Current deployment:** Moonbeam — StellaSwap (V2/V3/V4), Beamswap (V2/V3), Nimbus stDOT vault.
 
+### [xchain-mev-simulator](https://github.com/xchain-mev-research/xchain-mev-simulator)
+
+A cross-chain MEV simulator for research and strategy analysis on Polkadot parachains. Given a market state at a specific block, it discovers all profitable circular arbitrage routes across Moonbeam and Hydration, determines the optimal input size per route, plans the flash loans to fund them, and computes full expected value including cross-chain execution risk. Designed to run against indexed historical snapshots from `xchain-dex-indexer`.
+
+**Key features:**
+- Multi-hop swap simulation with full tick math (Uniswap V2/V3/V4, Algebra V3/V4, LST vault)
+- DFS-based circular route discovery across all pool pairs
+- Flash loan planning with lowest-fee-first source selection across V2/V3/V4/Stable pools
+- EV model (inclusion probability, bridge reliability, price survival, MEV tax, CVaR95) — structured pseudocode, not yet wired to live data
+- Vaadin + React UI for interactive route simulation and Mermaid-rendered arbitrage flow diagrams
+
+**Current deployment:** Moonbeam — StellaSwap (V2/V3/V4), Beamswap (V2/V3), Nimbus stDOT vault. Hydration integration is planned but not yet implemented.
+
 ---
 
 ## Contributing
